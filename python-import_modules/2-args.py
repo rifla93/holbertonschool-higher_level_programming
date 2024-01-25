@@ -1,17 +1,13 @@
 #!/usr/bin/python3
-import sys
-
-
-def print_args():
-    num_args = len(sys.argv) - 1
-    if num_args == 1:
-        print("Number of argument: {}".format(num_args))
-    else:
-        print("Number of arguments: {}".format(num_args))
-
-    for i, arg in enumerate(sys.argv[1:], start=1):
-        print("{}: {}".format(i, arg))
-
-
 if __name__ == "__main__":
-    print_args()
+    import sys
+argument_count = len(sys.argv)-1
+if argument_count == 0:
+    print("{} arguments.".format(argument_count))
+elif argument_count == 1:
+    print("{} argument:".format(argument_count))
+    print("{}: {}".format(argument_count, sys.argv[1]))
+else:
+    print("{} arguments:".format(argument_count))
+    for i in range(1, argument_count + 1):
+        print("{}: {}".format(i, sys.argv[i]))

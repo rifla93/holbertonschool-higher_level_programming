@@ -1,12 +1,8 @@
 #!/usr/bin/python3
-'''
-json file
-'''
+'''a function that reads a file'''
 
 
 def read_file(filename=""):
-    '''
-    json file
-    '''
-    with open(filename, "r", encoding="utf-8") as f:
-        print(f.read())
+    '''reads a file'''
+    with open(filename, encoding="utf-8") as my_file:
+        print(my_file.read(), end="")

@@ -5,9 +5,6 @@ json file
 '''
 
 
-import json
-
-
 def read_file(filename=""):
     '''
     json file

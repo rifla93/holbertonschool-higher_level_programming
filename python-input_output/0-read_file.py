@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 '''
 json file
-
 '''
 
 

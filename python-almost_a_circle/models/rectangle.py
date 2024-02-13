@@ -97,6 +97,7 @@ class Rectangle(Base):
             setattr(self, attribute, value)
 
     def update(self, *args, **kwargs):
+        '''update2'''
         attributes = ['id', 'width', 'height', 'x', 'y']
         if args:
             for attribute, value in zip(attributes, args):

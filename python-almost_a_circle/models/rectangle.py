@@ -69,6 +69,4 @@ class Rectangle(Base):
         '''
         area
         '''
-        
-        
         return self.__width * self.__height
